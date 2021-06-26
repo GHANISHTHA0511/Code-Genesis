@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int b,h,d,a,p,t;
+    char g;
+    cin>>b;
+    cin>>g;
+    h=b *(20/100);
+    d=b *(50/100);
+    if(g=='A'){
+        a=1700;
+    }
+    else if(g=='B'){
+        a=1500;
+        
+    }
+    else{
+        a=1300;
+    }
+    p=b *(11/100);
+    
+    t=b+h+d+a-p;
+    cout<<t;
+    
+    
+    
+
+    return 0;
+}

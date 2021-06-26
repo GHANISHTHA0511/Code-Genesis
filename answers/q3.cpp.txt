@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,l,c,s;
+    string n;
+    cin>>i;
+    cin>>n;
+    cin>>l;
+    if(l<=190){
+        c=l*3;
+        
+    }
+    else if(l>=200 && l<400){
+        c=l*3.35;
+    }
+    else if(l>=400 && l<600){
+        c=l*4.80;
+    }
+    else{
+        c=l*5.10;
+    }
+    s=c*(15/100);
+    if(c>1250){
+        c=c+s;
+    }
+    cout<<i<<endl;;
+    cout<<n<<endl;
+    cout<<l<<endl;
+    cout<<c<<endl;
+    
+
+    return 0;
+}
